@@ -15,8 +15,16 @@
   <url>http://components.neo4j.org/${project.artifactId}/${project.version}</url>
   <packaging>pom</packaging>
 
+   <repositories>
+ 	 <repository>
+		<id>neo</id>
+		<name>neo</name>
+		<url>http://m2.neo4j.org</url>
+	</repository>
+  </repositories>
+
   <properties>
-    <neo4j.version>1.8-SNAPSHOT</neo4j.version>
+    <neo4j.version>2.0.0-M04</neo4j.version>
     <docs.tools>${project.build.directory}/tools</docs.tools>
     <docs.upstream>${project.build.directory}</docs.upstream>
     <docs.importdir>${docs.upstream}/docs</docs.importdir>
@@ -27,7 +35,7 @@
     <dependency>
       <groupId>org.neo4j.build.plugins</groupId>
       <artifactId>neo4j-doctools</artifactId>
-      <version>1-SNAPSHOT</version>
+      <version>14</version>
       <scope>provided</scope>
     </dependency>
     <dependency>
